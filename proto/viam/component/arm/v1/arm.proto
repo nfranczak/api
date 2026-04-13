@@ -183,4 +183,6 @@ message MoveOptions {
   repeated double max_vel_degs_per_sec_joints = 3;
   // Per-joint maximum acceleration in degrees per second squared.
   repeated double max_acc_degs_per_sec2_joints = 4;
+  // Maximum allowable speed of an arm's tool center point in meters per second
+  optional double max_tcp_speed = 5;
 }
